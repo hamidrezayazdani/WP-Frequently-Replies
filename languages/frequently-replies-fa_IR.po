@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Frequently Replies\n"
+"POT-Creation-Date: 2024-02-22 10:58+0330\n"
+"PO-Revision-Date: 2024-02-22 11:03+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: frequently-replies.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: frequently-replies.php:62 frequently-replies.php:91
+#: frequently-replies.php:92
+msgid "Frequently Replies"
+msgstr "پاسخ‌های متداول"
+
+#: frequently-replies.php:63
+msgid "Click and select a reply to reply easily"
+msgstr "برای پاسخ دادن، کلیک کنید و یک پاسخ را به سادگی انتخاب کنید."
+
+#: frequently-replies.php:64
+msgid "Insert"
+msgstr "درج"
+
+#: frequently-replies.php:65
+msgid "Cancel"
+msgstr "لغو"
+
+#: frequently-replies.php:66
+msgid "Please select a reply to insert"
+msgstr "لطفاً پاسخی را برگزینید"
+
+#: frequently-replies.php:67
+msgid "Please add some replies to start from"
+msgstr "لطفاً برای شروع چند پاسخ اضافه کنید"
+
+#: frequently-replies.php:68
+msgid "here"
+msgstr "بزن بریم"
+
+#: frequently-replies.php:69
+msgid "No reply found!"
+msgstr "پاسخی یافت نشد!"
+
+#: frequently-replies.php:134 views/option-page.php:23 views/option-page.php:55
+msgid "Title"
+msgstr "عنوان"
+
+#: frequently-replies.php:135 views/option-page.php:33 views/option-page.php:65
+msgid "Content"
+msgstr "محتوا"
+
+#: frequently-replies.php:136 views/option-page.php:30 views/option-page.php:62
+msgid "Remove"
+msgstr "پاک کردن"
+
+#: frequently-replies.php:137
+msgid "The reply list saved!"
+msgstr "لیست پاسخ‌ها ذخیره شد!"
+
+#: frequently-replies.php:138
+msgid "Error!"
+msgstr "خطا!"
+
+#: frequently-replies.php:218
+msgid "The replies saved successfully without changes!"
+msgstr "پاسخ‌ها بدون تغییری با موفقیت ذخیره شدند!"
+
+#: frequently-replies.php:230
+msgid "The replies saved successfully!"
+msgstr "پاسخ‌ها با موفقیت ذخیره شدند!"
+
+#: frequently-replies.php:239
+msgid "Failed to save the replies!"
+msgstr "ذخیره‌سازی پاسخ‌ها شکست خورد!"
+
+#: views/option-page.php:10
+msgid "Frequently Replies List"
+msgstr "لیست پاسخ‌های متداول"
+
+#: views/option-page.php:92
+msgid "Add another reply"
+msgstr "افزودن پاسخی دیگر"
+
+#: views/option-page.php:94
+msgid "Save Options"
+msgstr "ذخیرۀ تنظیمات"
+
+#. Description of the plugin/theme
+msgid ""
+"If you are tired of copying/pasting duplicate responses to your users' "
+"comments, this plugin is for you"
+msgstr ""
+"اگر از نوشتن پاسخ‌های تکراری به دیدگاه‌های کاربران خود خسته شدید، این افزونه "
+"برای شماست"
+
+#. Author of the plugin/theme
+msgid "Hamid Reza Yazdani"
+msgstr "حمید رضا یزدانی"
