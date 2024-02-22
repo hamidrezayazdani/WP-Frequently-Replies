@@ -1,4 +1,4 @@
-=== WooCommerce ===
+=== WP Frequently Replies ===
 Contributors: yazdaniwp
 Tags: frequently replies, reply, comment, woocommerce review, review, easy reply
 Tested up to: 6.4
