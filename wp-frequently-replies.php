@@ -284,3 +284,19 @@ if ( ! function_exists( 'wfr_sanitize_reply' ) ) {
 		return wp_kses( $reply_content, $allowed_tags );
 	}
 }
+
+if ( ! function_exists( 'wfr_add_wc_hpos_compatibility' ) ) {
+
+	/**
+	 * Adds WooCommerce HPOS compatibility
+	 *
+	 * @return void
+	 */
+	function wfr_add_wc_hpos_compatibility() {
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__ );
+		}
+	}
+
+	add_action( 'before_woocommerce_init', 'wfr_add_wc_hpos_compatibility' );
+}
