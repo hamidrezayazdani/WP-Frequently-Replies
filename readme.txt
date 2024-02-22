@@ -6,7 +6,7 @@ Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-If you are tired of copying/pasting duplicate responses to your users' comments, this plugin is for you
+If you are tired of copying/pasting duplicate responses to your user's comments, this plugin is for you
 
 == Description ==
 If you have a blog where users have questions with repeated answers in the comments, or even if you have an online store and typing or copying/pasting repeated answers takes a lot of time, this plugin will help you get useful and beautiful answers to your users in the shortest possible time.
