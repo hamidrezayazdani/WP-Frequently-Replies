@@ -57,7 +57,7 @@ if ( ! function_exists( 'wfr_enqueue_assets' ) ) {
 			$replies[] = array(
 				'slug'    => esc_attr( $reply['slug'] ),
 				'title'   => esc_attr( $reply['title'] ),
-				'content' => esc_html( $reply['content'] ),
+				'content' => wfr_sanitize_reply( $reply['content'] ),
 			);
 		}
 

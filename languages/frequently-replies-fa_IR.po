@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Frequently Replies\n"
-"POT-Creation-Date: 2024-02-22 10:58+0330\n"
-"PO-Revision-Date: 2024-02-22 11:03+0330\n"
+"POT-Creation-Date: 2024-02-22 11:03+0330\n"
+"PO-Revision-Date: 2024-02-22 13:06+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -22,68 +22,68 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: frequently-replies.php:62 frequently-replies.php:91
-#: frequently-replies.php:92
+#: frequently-replies.php:66 frequently-replies.php:95
+#: frequently-replies.php:96
 msgid "Frequently Replies"
 msgstr "پاسخ‌های متداول"
 
-#: frequently-replies.php:63
+#: frequently-replies.php:67
 msgid "Click and select a reply to reply easily"
 msgstr "برای پاسخ دادن، کلیک کنید و یک پاسخ را به سادگی انتخاب کنید."
 
-#: frequently-replies.php:64
+#: frequently-replies.php:68
 msgid "Insert"
 msgstr "درج"
 
-#: frequently-replies.php:65
+#: frequently-replies.php:69
 msgid "Cancel"
 msgstr "لغو"
 
-#: frequently-replies.php:66
+#: frequently-replies.php:70
 msgid "Please select a reply to insert"
 msgstr "لطفاً پاسخی را برگزینید"
 
-#: frequently-replies.php:67
+#: frequently-replies.php:71
 msgid "Please add some replies to start from"
 msgstr "لطفاً برای شروع چند پاسخ اضافه کنید"
 
-#: frequently-replies.php:68
+#: frequently-replies.php:72
 msgid "here"
 msgstr "بزن بریم"
 
-#: frequently-replies.php:69
+#: frequently-replies.php:73
 msgid "No reply found!"
 msgstr "پاسخی یافت نشد!"
 
-#: frequently-replies.php:134 views/option-page.php:23 views/option-page.php:55
+#: frequently-replies.php:138 views/option-page.php:23 views/option-page.php:55
 msgid "Title"
 msgstr "عنوان"
 
-#: frequently-replies.php:135 views/option-page.php:33 views/option-page.php:65
+#: frequently-replies.php:139 views/option-page.php:33 views/option-page.php:65
 msgid "Content"
 msgstr "محتوا"
 
-#: frequently-replies.php:136 views/option-page.php:30 views/option-page.php:62
+#: frequently-replies.php:140 views/option-page.php:30 views/option-page.php:62
 msgid "Remove"
 msgstr "پاک کردن"
 
-#: frequently-replies.php:137
+#: frequently-replies.php:141
 msgid "The reply list saved!"
 msgstr "لیست پاسخ‌ها ذخیره شد!"
 
-#: frequently-replies.php:138
+#: frequently-replies.php:142
 msgid "Error!"
 msgstr "خطا!"
 
-#: frequently-replies.php:218
+#: frequently-replies.php:222
 msgid "The replies saved successfully without changes!"
 msgstr "پاسخ‌ها بدون تغییری با موفقیت ذخیره شدند!"
 
-#: frequently-replies.php:230
+#: frequently-replies.php:234
 msgid "The replies saved successfully!"
 msgstr "پاسخ‌ها با موفقیت ذخیره شدند!"
 
-#: frequently-replies.php:239
+#: frequently-replies.php:243
 msgid "Failed to save the replies!"
 msgstr "ذخیره‌سازی پاسخ‌ها شکست خورد!"
 
@@ -110,3 +110,7 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Hamid Reza Yazdani"
 msgstr "حمید رضا یزدانی"
+
+#. Author URI of the plugin/theme
+msgid "https://woo.com"
+msgstr ""
