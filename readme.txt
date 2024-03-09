@@ -1,5 +1,3 @@
-![screenshot](https://github.com/hamidrezayazdani/WP-Frequently-Replies/assets/40775953/8e0b6e2e-0201-48fb-8020-c3421fd8c634)
-
 === WP Frequently Replies ===
 Contributors: yazdaniwp
 Tags: frequently replies, reply, comment, woocommerce review, review, easy reply
