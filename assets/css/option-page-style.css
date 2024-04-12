@@ -50,7 +50,7 @@ label {
   position: relative;
 }
 
-.wfr-footer {
+.wpfr-footer {
   position: fixed;
   bottom: 0;
   padding: 15px;
@@ -59,12 +59,12 @@ label {
   box-shadow: 0 0 30px 0 #0000000a;
 }
 
-body.rtl .wfr-footer {
+body.rtl .wpfr-footer {
   left: 0;
   right: 160px
 }
 
-body:not(.rtl) .wfr-footer {
+body:not(.rtl) .wpfr-footer {
   left: 160px;
   right: 0
 }
@@ -73,7 +73,7 @@ body:not(.rtl) .wfr-footer {
   bottom: 60px
 }
 
-.wfr-remove {
+.wpfr-remove {
   float: right;
   font-size: 13px;
   line-height: 1.23076923;
@@ -82,24 +82,24 @@ body:not(.rtl) .wfr-footer {
   top: 7px;
 }
 
-.wfr-remove:before {
+.wpfr-remove:before {
   display: inline-block;
   vertical-align: middle;
 }
 
-body.rtl .wfr-remove {
+body.rtl .wpfr-remove {
   float: left;
 }
 
-body.rtl .wfr-remove:before {
+body.rtl .wpfr-remove:before {
   margin-left: 5px;
 }
 
-body:not(.rtl) .wfr-remove:before {
+body:not(.rtl) .wpfr-remove:before {
   margin-right: 5px;
 }
 
-#wfr-blocker {
+#wpfr-blocker {
   position: absolute;
   top: 0;
   right: 0;
@@ -111,7 +111,7 @@ body:not(.rtl) .wfr-remove:before {
   display: none;
 }
 
-#wfr-snackbar {
+#wpfr-snackbar {
   position: fixed;
   bottom: -15px;
   transition: all ease-in-out .5s;
@@ -126,17 +126,17 @@ body:not(.rtl) .wfr-remove:before {
   opacity: 0
 }
 
-#wfr-snackbar.show {
+#wpfr-snackbar.show {
   bottom: 70px;
   opacity: 1
 }
 
-#wfr-snackbar.success {
+#wpfr-snackbar.success {
   background: #c4ffe6;
   box-shadow: 0 0 15px 0 #00800069;
 }
 
-#wfr-snackbar.error {
+#wpfr-snackbar.error {
   background: #ffc4cd;
   box-shadow: 0 0 15px 0 rgba(128, 0, 23, 0.41);
 }

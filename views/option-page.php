@@ -9,7 +9,7 @@ $i       = 0;
 <div class="wrap">
     <h1><?php echo esc_html__( 'Frequently Replies List', 'frequently-replies' ); ?></h1>
 
-    <form id="frequently-replies-options-form" name="frequently-replies-options-form" method="post" action="<?php echo esc_url( add_query_arg( array( 'page' => 'wfr-options' ), get_admin_url() . 'edit-comments.php' ) ); ?>">
+    <form id="frequently-replies-options-form" name="frequently-replies-options-form" method="post" action="<?php echo esc_url( add_query_arg( array( 'page' => 'wpfr-options' ), get_admin_url() . 'edit-comments.php' ) ); ?>">
 
         <div id="replies-item-wrapper">
 
@@ -27,7 +27,7 @@ $i       = 0;
                                 </div>
                             </div>
 
-                            <a class="wfr-remove notice-dismiss" href="#"><?php echo esc_html__( 'Remove', 'frequently-replies' ); ?></a>
+                            <a class="wpfr-remove notice-dismiss" href="#"><?php echo esc_html__( 'Remove', 'frequently-replies' ); ?></a>
 
                             <div class="form-group row">
                                 <label for="replycontent-<?php echo esc_attr( $i ); ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Content', 'frequently-replies' ); ?></label>
@@ -59,7 +59,7 @@ $i       = 0;
                         </div>
                     </div>
 
-                    <a class="wfr-remove notice-dismiss" href="#"><?php echo esc_html__( 'Remove', 'frequently-replies' ); ?></a>
+                    <a class="wpfr-remove notice-dismiss" href="#"><?php echo esc_html__( 'Remove', 'frequently-replies' ); ?></a>
 
                     <div class="form-group row">
                         <label for="replycontent-<?php echo esc_attr( $i ); ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Content', 'frequently-replies' ); ?></label>
@@ -81,13 +81,13 @@ $i       = 0;
 
         </div>
 
-        <div id="wfr-snackbar"></div>
+        <div id="wpfr-snackbar"></div>
 
-        <div class="wfr-footer">
+        <div class="wpfr-footer">
 
             <input type="hidden" name="action" value="save_wpfr_options">
 
-			<?php wp_nonce_field( 'wfr-options-nonce', 'wpfr_nonce' ); ?>
+			<?php wp_nonce_field( 'wpfr-options-nonce', 'wpfr_nonce' ); ?>
 
             <a href="#" class="button-secondary alignleft" id="add-another-reply"><?php echo esc_html__( 'Add another reply', 'frequently-replies' ); ?></a>
 
@@ -97,6 +97,6 @@ $i       = 0;
 
     </form>
 
-    <div id="wfr-blocker"></div>
+    <div id="wpfr-blocker"></div>
 
 </div>

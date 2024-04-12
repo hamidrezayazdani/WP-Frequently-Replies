@@ -42,13 +42,13 @@ if ( ! function_exists( 'wpfr_enqueue_assets' ) ) {
 	 * @return void
 	 */
 	function wpfr_enqueue_assets( $hook ) {
-		if ( 'comments_page_wfr-options' === $hook ) {
+		if ( 'comments_page_wpfr-options' === $hook ) {
 			return;
 		}
 
 		wp_enqueue_script( 'thickbox' );
 		wp_enqueue_style( 'thickbox' );
-		wp_enqueue_script( 'wfr-script', WPFR_URI . 'assets/js/editor-script.js', array( 'jquery', 'quicktags', 'thickbox' ), WPFR_VER, true );
+		wp_enqueue_script( 'wpfr-script', WPFR_URI . 'assets/js/editor-script.js', array( 'jquery', 'quicktags', 'thickbox' ), WPFR_VER, true );
 
 		$replies_list = get_option( 'wpfr_replies', array() );
 		$replies      = array();
@@ -71,12 +71,12 @@ if ( ! function_exists( 'wpfr_enqueue_assets' ) ) {
 				'pleaseAdd'    => esc_html__( 'Please add some replies to start from', 'frequently-replies' ),
 				'here'         => esc_html__( 'here', 'frequently-replies' ),
 				'noItem'       => esc_html__( 'No reply found!', 'frequently-replies' ),
-				'optionsUrl'   => esc_url( add_query_arg( array( 'page' => 'wfr-options' ), get_admin_url() . 'edit-comments.php' ) ),
+				'optionsUrl'   => esc_url( add_query_arg( array( 'page' => 'wpfr-options' ), get_admin_url() . 'edit-comments.php' ) ),
 			),
 			'replies' => $replies,
 		);
 
-		wp_localize_script( 'wfr-script', 'wfrReplies', $wpfr_localized );
+		wp_localize_script( 'wpfr-script', 'wfrReplies', $wpfr_localized );
 	}
 
 	add_action( 'admin_enqueue_scripts', 'wpfr_enqueue_assets' );
@@ -95,7 +95,7 @@ if ( ! function_exists( 'wpfr_options_page' ) ) {
 			__( 'Frequently Replies', 'frequently-replies' ),
 			__( 'Frequently Replies', 'frequently-replies' ),
 			'moderate_comments',
-			'wfr-options',
+			'wpfr-options',
 			'wpfr_render_options_page',
 		);
 
@@ -116,7 +116,7 @@ if ( ! function_exists( 'wpfr_enqueue_option_page_style' ) ) {
 	function wpfr_enqueue_option_page_style() {
 		$suffix = wpfr_script_debug_activated() ? '' : '.min';
 
-		wp_enqueue_style( 'wfr-option-page-style', WPFR_URI . 'assets/css/option-page-style' . $suffix . '.css', '', WPFR_VER );
+		wp_enqueue_style( 'wpfr-option-page-style', WPFR_URI . 'assets/css/option-page-style' . $suffix . '.css', '', WPFR_VER );
 	}
 }
 
@@ -131,7 +131,7 @@ if ( ! function_exists( 'wpfr_enqueue_option_page_script' ) ) {
 		$suffix = wpfr_script_debug_activated() ? '' : '.min';
 
 		wp_enqueue_editor();
-		wp_enqueue_script( 'wfr-option-page-script', WPFR_URI . 'assets/js/option-page-script' . $suffix . '.js', array( 'jquery', 'quicktags', 'thickbox' ), WPFR_VER, true );
+		wp_enqueue_script( 'wpfr-option-page-script', WPFR_URI . 'assets/js/option-page-script' . $suffix . '.js', array( 'jquery', 'quicktags', 'thickbox' ), WPFR_VER, true );
 
 		$option_page_localized = array(
 			'i18n' => array(
@@ -143,7 +143,7 @@ if ( ! function_exists( 'wpfr_enqueue_option_page_script' ) ) {
 			),
 		);
 
-		wp_localize_script( 'wfr-option-page-script', 'wfrOptions', $option_page_localized );
+		wp_localize_script( 'wpfr-option-page-script', 'wfrOptions', $option_page_localized );
 	}
 }
 
@@ -179,7 +179,7 @@ if ( ! function_exists( 'wpfr_save_frequently_replies_ajax_callback' ) ) {
 	 * @return void
 	 */
 	function wpfr_save_frequently_replies_ajax_callback() {
-		check_ajax_referer( 'wfr-options-nonce', 'wpfr_nonce' );
+		check_ajax_referer( 'wpfr-options-nonce', 'wpfr_nonce' );
 
 		if ( ! current_user_can( 'moderate_comments' ) ) {
 			wp_send_json_error(

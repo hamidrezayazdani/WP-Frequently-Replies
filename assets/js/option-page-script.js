@@ -17,8 +17,8 @@ const repliesForm = document.getElementById('frequently-replies-options-form')
 const repliesList = document.getElementById('replies-item-container')
 const addBtn = document.getElementById('add-another-reply')
 const saveBtn = document.getElementById('save-options')
-const blocker = document.getElementById('wfr-blocker')
-const snackBar = document.getElementById('wfr-snackbar')
+const blocker = document.getElementById('wpfr-blocker')
+const snackBar = document.getElementById('wpfr-snackbar')
 
 addBtn.addEventListener('click', function (e) {
   e.preventDefault()
@@ -30,10 +30,10 @@ addBtn.addEventListener('click', function (e) {
 document.addEventListener('click', (e) => {
   const target = e.target
 
-  if (target.classList.contains('wfr-remove')) {
+  if (target.classList.contains('wpfr-remove')) {
     e.preventDefault();
 
-    if (document.getElementsByClassName('wfr-remove').length > 1) {
+    if (document.getElementsByClassName('wpfr-remove').length > 1) {
       target.parentNode.remove()
     } else {
       const inputText = target.parentNode.querySelector('input[type="text"]')
@@ -86,7 +86,7 @@ function wfrNewReply() {
   return `<li><div class="form-group row">
         <label for="replytitle-${replyCount}" class="col-sm-2 col-form-label">${wfrOptions.i18n.title}</label>
         <div class="col-sm-10"><input type="text" name="replies[${replyCount}][title]" class="regular-text" id="replytitle-${replyCount}" value=""></div></div>
-        <a class="wfr-remove notice-dismiss" href="#">${wfrOptions.i18n.remove}</a><div class="form-group row">
+        <a class="wpfr-remove notice-dismiss" href="#">${wfrOptions.i18n.remove}</a><div class="form-group row">
         <label for="replycontent-${replyCount}" class="col-sm-2 col-form-label">${wfrOptions.i18n.content}</label>
         <div class="col-sm-10">
             <div id="replycontainer-${replyCount}">
