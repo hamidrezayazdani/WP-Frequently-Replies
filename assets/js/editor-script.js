@@ -1,4 +1,4 @@
-QTags.addButton('wfr_button', wfrReplies.i18n.wfrBtn, wfrOpenThickbox, '', '', wfrReplies.i18n.wfrTip, 1, 'replycontent')
+QTags.addButton('wpfr_button', wfrReplies.i18n.wfrBtn, wfrOpenThickbox, '', '', wfrReplies.i18n.wfrTip, 1, 'replycontent')
 
 function wfrOpenThickbox() {
   let tbHeight = 90
@@ -18,7 +18,7 @@ function wfrOpenThickbox() {
     tbHeight = 45
   }
 
-  tb_show(wfrReplies.i18n.pleaseSelect, `#TB_inline?width=300&height=${tbHeight}&inlineId=wfr_button`)
+  tb_show(wfrReplies.i18n.pleaseSelect, `#TB_inline?width=300&height=${tbHeight}&inlineId=wpfr_button`)
   document.getElementById('TB_ajaxContent').innerHTML = wfrTbContent
 }
 

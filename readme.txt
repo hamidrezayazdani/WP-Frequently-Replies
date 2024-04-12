@@ -1,10 +1,11 @@
 === WP Frequently Replies ===
 Contributors: yazdaniwp
 Tags: frequently replies, reply, comment, woocommerce review, review, easy reply
+Stable tag: 1.0.0
 Tested up to: 6.4
 Requires PHP: 7.4
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 If you are tired of copying/pasting duplicate responses to your user's comments, this plugin is for you
 

@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$replies = get_option( 'wfr_replies' );
+$replies = get_option( 'wpfr_replies' );
 $i       = 0;
 ?>
 
@@ -20,23 +20,23 @@ $i       = 0;
 					foreach ( $replies as $reply ) : ?>
                         <li>
                             <div class="form-group row">
-                                <label for="replytitle-<?php echo $i; ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Title', 'frequently-replies' ); ?></label>
+                                <label for="replytitle-<?php echo esc_attr( $i ); ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Title', 'frequently-replies' ); ?></label>
 
                                 <div class="col-sm-10">
-                                    <input type="text" name="replies[<?php echo $i; ?>][title]" class="regular-text" id="replytitle-<?php echo $i; ?>" value="<?php echo esc_attr( $reply['title'] ); ?>">
+                                    <input type="text" name="replies[<?php echo esc_attr( $i ); ?>][title]" class="regular-text" id="replytitle-<?php echo esc_attr( $i ); ?>" value="<?php echo esc_attr( $reply['title'] ); ?>">
                                 </div>
                             </div>
 
                             <a class="wfr-remove notice-dismiss" href="#"><?php echo esc_html__( 'Remove', 'frequently-replies' ); ?></a>
 
                             <div class="form-group row">
-                                <label for="replycontent-<?php echo $i; ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Content', 'frequently-replies' ); ?></label>
+                                <label for="replycontent-<?php echo esc_attr( $i ); ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Content', 'frequently-replies' ); ?></label>
 
                                 <div class="col-sm-10">
-                                    <div id="replycontainer-<?php echo $i; ?>">
-                                        <div id="wp-replycontent-wrap-<?php echo $i; ?>" class="wp-core-ui wp-editor-wrap html-active">
-                                            <div id="wp-replycontent-editor-container-<?php echo $i; ?>r" class="wp-editor-container">
-                                                <textarea class="wp-editor-area" rows="5" tabindex="104" cols="40" name="replies[<?php echo $i; ?>][content]" id="replycontent-<?php echo $i; ?>"><?php echo esc_html( $reply['content'] ); ?></textarea>
+                                    <div id="replycontainer-<?php echo esc_attr( $i ); ?>">
+                                        <div id="wp-replycontent-wrap-<?php echo esc_attr( $i ); ?>" class="wp-core-ui wp-editor-wrap html-active">
+                                            <div id="wp-replycontent-editor-container-<?php echo esc_attr( $i ); ?>r" class="wp-editor-container">
+                                                <textarea class="wp-editor-area" rows="5" tabindex="104" cols="40" name="replies[<?php echo esc_attr( $i ); ?>][content]" id="replycontent-<?php echo esc_attr( $i ); ?>"><?php echo esc_html( $reply['content'] ); ?></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -52,23 +52,23 @@ $i       = 0;
 				?>
                 <li>
                     <div class="form-group row">
-                        <label for="replytitle-<?php echo $i; ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Title', 'frequently-replies' ); ?></label>
+                        <label for="replytitle-<?php echo esc_attr( $i ); ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Title', 'frequently-replies' ); ?></label>
 
                         <div class="col-sm-10">
-                            <input type="text" name="replies[<?php echo $i; ?>][title]" class="regular-text" id="replytitle-<?php echo $i; ?>" value="">
+                            <input type="text" name="replies[<?php echo esc_attr( $i ); ?>][title]" class="regular-text" id="replytitle-<?php echo esc_attr( $i ); ?>" value="">
                         </div>
                     </div>
 
                     <a class="wfr-remove notice-dismiss" href="#"><?php echo esc_html__( 'Remove', 'frequently-replies' ); ?></a>
 
                     <div class="form-group row">
-                        <label for="replycontent-<?php echo $i; ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Content', 'frequently-replies' ); ?></label>
+                        <label for="replycontent-<?php echo esc_attr( $i ); ?>" class="col-sm-2 col-form-label"><?php echo esc_html__( 'Content', 'frequently-replies' ); ?></label>
 
                         <div class="col-sm-10">
-                            <div id="replycontainer-<?php echo $i; ?>">
-                                <div id="wp-replycontent-wrap-<?php echo $i; ?>" class="wp-core-ui wp-editor-wrap html-active">
-                                    <div id="wp-replycontent-editor-container-<?php echo $i; ?>" class="wp-editor-container">
-                                        <textarea class="wp-editor-area" rows="5" tabindex="104" cols="40" name="replies[<?php echo $i; ?>][content]" id="replycontent-<?php echo $i; ?>"></textarea>
+                            <div id="replycontainer-<?php echo esc_attr( $i ); ?>">
+                                <div id="wp-replycontent-wrap-<?php echo esc_attr( $i ); ?>" class="wp-core-ui wp-editor-wrap html-active">
+                                    <div id="wp-replycontent-editor-container-<?php echo esc_attr( $i ); ?>" class="wp-editor-container">
+                                        <textarea class="wp-editor-area" rows="5" tabindex="104" cols="40" name="replies[<?php echo esc_attr( $i ); ?>][content]" id="replycontent-<?php echo esc_attr( $i ); ?>"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -85,9 +85,9 @@ $i       = 0;
 
         <div class="wfr-footer">
 
-            <input type="hidden" name="action" value="save_wfr_options">
+            <input type="hidden" name="action" value="save_wpfr_options">
 
-			<?php wp_nonce_field( 'wfr-options-nonce', 'wfr_nonce' ); ?>
+			<?php wp_nonce_field( 'wfr-options-nonce', 'wpfr_nonce' ); ?>
 
             <a href="#" class="button-secondary alignleft" id="add-another-reply"><?php echo esc_html__( 'Add another reply', 'frequently-replies' ); ?></a>
 
